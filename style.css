@@ -1,0 +1,60 @@
+body {
+    margin: 0;
+    background: rgb(27, 27, 27);
+}
+.center {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(27, 27, 27);
+}
+.cont {
+    display: flex;
+}
+@media only screen and (max-width: 400px) {
+    .cont {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+.batt {
+    width: 200px;
+    height: 100px;
+    background: rgba(0, 0, 0, 0.418);
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+}
+.juice {
+    background: rgb(255, 60, 60);
+    width: 200px;
+    height: 100px;
+    transform: translate(-200px,0);
+    transition: transform 20s, background 0.2s 2s;
+}
+.cont:hover .juice {
+    transform: translate(0,0);
+    background: #ffffff;
+    transition: transform 5s, background 0.2s 0.8s;
+}
+.bolt {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+svg {
+    width: 50px;
+    height: auto;
+}
+#path1121 {
+    fill: rgba(0, 0, 0, 0.418) !important;
+    transition: all 0.2s;
+}
+.cont:hover #path1121 {
+    fill: white !important;
+}
